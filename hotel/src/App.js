@@ -21,6 +21,7 @@ function App() {
     <div className="App">
   
       <Header/>
+      <MainCar/>
      
     </div>
   );
