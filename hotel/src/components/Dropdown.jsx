@@ -63,7 +63,7 @@ Dropdown.defaultProps = {
   option2Url: "page3.html",
   option3Url: "page4.html",
   navname: "Allen",
-  optionname1:"1",
-  optionname2:"2",
-  optionname3:"3",
+  optionname1:"Sign-in",
+  optionname2:"Account ",
+  optionname3:"Log-out",
 };

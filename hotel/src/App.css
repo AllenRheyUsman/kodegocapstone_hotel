@@ -52,3 +52,16 @@
   transition: all 0.3s ease-in-out;
  
 }
+.link-primary {
+  color: #425568 !important;
+  text-decoration: none;
+}
+.link-primary:hover {
+  color:#35e2a6 !important;
+  text-shadow: 2px 4px .8px rgba(117, 114, 114, 0.2);
+  font-size: 18px;
+  font-weight: 50px;
+  transform: translateY(-200px);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
