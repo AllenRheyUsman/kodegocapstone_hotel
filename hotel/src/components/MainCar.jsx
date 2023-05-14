@@ -16,46 +16,47 @@ export default function MainCar(props) {
   };
 
   return (
-    <div className="mama">
-        <div className="card5">
+    <div className="d-flex mama">
+         <button className="carousel-button prev-button kaliwa" onClick={handlePrevious}>
+        Prev
+      </button>
+        <div className="dalawa">
         <Card
           imageUrl={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].imageUrl}
           title={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].title}
           description={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].description}
         />
       </div>
-      <div className="card1">
+      <div className="una">
         <Card
           imageUrl={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].imageUrl}
           title={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].title}
           description={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].description}
         />
       </div>
-      <div className="card2">
-        <Card
+      <div className={`maincard card2${currentIndex === 0 ? 'main' : ''}`}>
+        <Card className="maincard"
           imageUrl={props.cards[currentIndex].imageUrl}
           title={props.cards[currentIndex].title}
           description={props.cards[currentIndex].description}
         />
       </div>
-      <div className="card3">
-        <Card
+      <div className="tatlo">
+        <Card 
           imageUrl={props.cards[(currentIndex + 1) % props.cards.length].imageUrl}
           title={props.cards[(currentIndex + 1) % props.cards.length].title}
           description={props.cards[(currentIndex + 1) % props.cards.length].description}
         />
       </div>
-      <div className="card4">
+      <div className="apat">
         <Card
           imageUrl={props.cards[(currentIndex + 2) % props.cards.length].imageUrl}
           title={props.cards[(currentIndex + 2) % props.cards.length].title}
           description={props.cards[(currentIndex + 2) % props.cards.length].description}
         />
       </div>
-      <button className="carousel-button prev-button" onClick={handlePrevious}>
-        Prev
-      </button>
-      <button className="carousel-button next-button" onClick={handleNext}>
+   
+      <button className="carousel-button next-button kanan" onClick={handleNext}>
         Next
       </button>
     </div>
@@ -64,6 +65,16 @@ export default function MainCar(props) {
 
 MainCar.defaultProps = {
   cards: [
+    {
+      imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1106465042519572571/Soggywaffles_jisoo_of_blackpink_in_a_Bboy_stance_background_for_bc959426-e6fe-40d8-9a8a-31e7f73338a7.png",
+      title: "Card 1",
+      description: "Description for Card 1",
+    },
+    {
+      imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1106465549854187621/Soggywaffles_Rose_of_blackpink_in_a_Bboy_stance_background_fore_f6b251d8-30a7-412e-b9e1-b4b0f2e2a42f.png",
+      title: "Card 2",
+      description: "Description for Card 2",
+    },
     {
       imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1103306736506511390/Soggywaffles_Lisa_of_blackpink_in_a_Bboy_stance_background_fore_31917df4-a88f-488c-b6ab-fbc8ab70af76.png",
       title: "Card 1",

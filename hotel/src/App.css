@@ -74,24 +74,54 @@
 }
 
 .mama {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+  
+  justify-content: end;
+  margin-right: 200px;
+
 }
 
-.card1,
-.card2,
-.card3,
-.card4,
-.card5 {
-  flex: 1;
-  margin: 0 10px;
+.una img{
+  margin-top: 60px;
+  padding-right: -0px;
+  width: 300px;
+  height: 320px;
+  border-radius: 30px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+}
+.dalawa img{
+  margin-top: 150px;
+  padding-right: -0px;
+  border-radius: 30px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+}
+.tatlo img{
+  margin-top: 60px;
+  border-radius: 30px;
+  width: 300px;
+  height: 320px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+}
+.apat img{
+  margin-top: 150px;
+  border-radius: 30px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+}
+.maincard img{
+ 
+  height: 350px;
+  width: 350px;
+  border-radius: 30px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-.card2 {
-  flex: 2;
-}
+
+
+
+
 
 .carousel-button {
   border: none;
@@ -100,15 +130,18 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  height: 50px;
+
+  align-self: center;
 }
 
 .prev-button {
-  position: absolute;
+  
   left: 0;
 }
 
 .next-button {
-  position: absolute;
+ 
   right: 0;
 }
 /* .card-container {
