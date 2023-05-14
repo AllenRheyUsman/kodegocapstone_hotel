@@ -1,3 +1,5 @@
+
+
 .navbtn{
   height: 30px;
 
@@ -87,7 +89,7 @@
   height: 320px;
   border-radius: 30px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-
+  
 }
 .dalawa img{
   margin-top: 150px;
@@ -115,9 +117,37 @@
   height: 350px;
   width: 350px;
   border-radius: 30px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 15px 25px 15px rgba(39, 41, 40, 0.5);
 }
 
+.maincard img:hover {
+  transform: translateY(-20px);
+  box-shadow: 15px 25px 15px rgba(157, 243, 200, 0.4);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+
+
+
+.una{
+  transform: translateX(30%)
+}
+.dalawa{
+  transform: translateX(80%)
+}
+.apat{
+  transform: translateX(-80%);
+}
+.tatlo{
+  transform: translateX(-30%);
+  z-index: 1;
+
+  
+}
+.maincard{
+  z-index: 2;
+}
 
 
 
@@ -125,25 +155,17 @@
 
 .carousel-button {
   border: none;
-  background-color: #0077cc;
+  background-color:rgba(207, 246, 247, 0.5);
   color: white;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 100%;
   cursor: pointer;
   height: 50px;
 
   align-self: center;
 }
 
-.prev-button {
-  
-  left: 0;
-}
 
-.next-button {
- 
-  right: 0;
-}
 /* .card-container {
   display: flex;
   justify-content: center;
@@ -159,3 +181,19 @@
 .card-container.next {
   transform: translateX(100%);
 } */
+.naol{
+  border: none !important;
+ 
+}
+
+.una, .dalawa, .tatlo, .apat {
+  filter: brightness(70%) blur(1.5px);
+  
+}
+.kanan{
+  transform: translateX(-300%);
+}
+.kaliwa{
+  transform: translateX(300%);
+  z-index: 1;
+}

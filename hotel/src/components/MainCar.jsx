@@ -18,20 +18,21 @@ export default function MainCar(props) {
   return (
     <div className="d-flex mama">
          <button className="carousel-button prev-button kaliwa" onClick={handlePrevious}>
-        Prev
+         <img src={process.env.PUBLIC_URL + '/images/vector.png'} alt="" />
+
       </button>
-        <div className="dalawa">
+        <div className="dalawa ">
         <Card
           imageUrl={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].imageUrl}
-          title={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].title}
-          description={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].description}
+          // title={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].title}
+          // description={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].description}
         />
       </div>
       <div className="una">
         <Card
           imageUrl={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].imageUrl}
-          title={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].title}
-          description={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].description}
+          // title={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].title}
+          // description={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].description}
         />
       </div>
       <div className={`maincard card2${currentIndex === 0 ? 'main' : ''}`}>
@@ -44,20 +45,21 @@ export default function MainCar(props) {
       <div className="tatlo">
         <Card 
           imageUrl={props.cards[(currentIndex + 1) % props.cards.length].imageUrl}
-          title={props.cards[(currentIndex + 1) % props.cards.length].title}
-          description={props.cards[(currentIndex + 1) % props.cards.length].description}
+          // title={props.cards[(currentIndex + 1) % props.cards.length].title}
+          // description={props.cards[(currentIndex + 1) % props.cards.length].description}
         />
       </div>
       <div className="apat">
         <Card
           imageUrl={props.cards[(currentIndex + 2) % props.cards.length].imageUrl}
-          title={props.cards[(currentIndex + 2) % props.cards.length].title}
-          description={props.cards[(currentIndex + 2) % props.cards.length].description}
+          // title={props.cards[(currentIndex + 2) % props.cards.length].title}
+          // description={props.cards[(currentIndex + 2) % props.cards.length].description}
         />
       </div>
    
       <button className="carousel-button next-button kanan" onClick={handleNext}>
-        Next
+      <img src={process.env.PUBLIC_URL + '/images/Vector 3.png'} alt="" />
+
       </button>
     </div>
   );
