@@ -82,7 +82,9 @@
 
 .card1,
 .card2,
-.card3 {
+.card3,
+.card4,
+.card5 {
   flex: 1;
   margin: 0 10px;
 }
@@ -109,3 +111,18 @@
   position: absolute;
   right: 0;
 }
+/* .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 0.5s ease-out;
+}
+
+.card-container.previous {
+  transform: translateX(-100%);
+}
+
+.card-container.next {
+  transform: translateX(100%);
+} */

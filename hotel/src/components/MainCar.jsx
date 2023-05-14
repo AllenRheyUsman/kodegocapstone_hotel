@@ -7,11 +7,11 @@ export default function MainCar(props) {
                   // event handlers
                   // ? ternary operators shorthand of if/else
 
-  const handleNext = () => {
+  const handlePrevious = () => {
     setCurrentIndex(currentIndex === 0 ? props.cards.length - 1 : currentIndex -1);
   };
 
-  const handlePrevious = () => {
+  const handleNext = () => {
     setCurrentIndex(currentIndex === props.cards.length - 1 ? 0 : currentIndex + 1);
   };
 
@@ -19,9 +19,9 @@ export default function MainCar(props) {
     <div className="mama">
         <div className="card5">
         <Card
-          imageUrl={props.cards[(currentIndex + 1) % props.cards.length].imageUrl}
-          title={props.cards[(currentIndex + 1) % props.cards.length].title}
-          description={props.cards[(currentIndex + 1) % props.cards.length].description}
+          imageUrl={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].imageUrl}
+          title={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].title}
+          description={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].description}
         />
       </div>
       <div className="card1">
@@ -47,9 +47,9 @@ export default function MainCar(props) {
       </div>
       <div className="card4">
         <Card
-          imageUrl={props.cards[(currentIndex + 1) % props.cards.length].imageUrl}
-          title={props.cards[(currentIndex + 1) % props.cards.length].title}
-          description={props.cards[(currentIndex + 1) % props.cards.length].description}
+          imageUrl={props.cards[(currentIndex + 2) % props.cards.length].imageUrl}
+          title={props.cards[(currentIndex + 2) % props.cards.length].title}
+          description={props.cards[(currentIndex + 2) % props.cards.length].description}
         />
       </div>
       <button className="carousel-button prev-button" onClick={handlePrevious}>
