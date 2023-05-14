@@ -6,9 +6,9 @@ export default function Card({ imageUrl, title, description }) {
       <img className="card-img-top" src={imageUrl} alt={title} />
      
       <div className="card-body mt-5">
-        <h5 className="card-title mt-3">{title}</h5>
+        <h5 className="card-title mt-3 deskript">{title}</h5>
       
-        <p className="card-text mt-5">{description}</p>
+        <p className="card-text mt-5 deskript">{description}</p>
       </div>
     </div>
   );

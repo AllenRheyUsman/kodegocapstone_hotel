@@ -31,8 +31,6 @@ export default function MainCar(props) {
       <div className="una">
         <Card
           imageUrl={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].imageUrl}
-          // title={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].title}
-          // description={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].description}
         />
       </div>
       <div className={`maincard card2${currentIndex === 0 ? 'main' : ''}`}>
@@ -69,28 +67,28 @@ MainCar.defaultProps = {
   cards: [
     {
       imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1106465042519572571/Soggywaffles_jisoo_of_blackpink_in_a_Bboy_stance_background_for_bc959426-e6fe-40d8-9a8a-31e7f73338a7.png",
-      title: "Card 1",
-      description: "Description for Card 1",
+      title: "Jisoo",
+      description: "Pink HAir Black Leather Jacket white under shirt",
     },
     {
       imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1106465549854187621/Soggywaffles_Rose_of_blackpink_in_a_Bboy_stance_background_fore_f6b251d8-30a7-412e-b9e1-b4b0f2e2a42f.png",
-      title: "Card 2",
-      description: "Description for Card 2",
+      title: "Rose",
+      description: "light pink hair with black undertone black leather jacket",
     },
     {
       imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1103306736506511390/Soggywaffles_Lisa_of_blackpink_in_a_Bboy_stance_background_fore_31917df4-a88f-488c-b6ab-fbc8ab70af76.png",
-      title: "Card 1",
-      description: "Description for Card 1",
+      title: "Lisa",
+      description: "tattered jeans blonde hair in a hooded leather jacket",
     },
     {
       imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1106465580116099082/Soggywaffles_Rose_of_blackpink_in_a_Bboy_stance_background_fore_77c18c0b-8d7e-4899-a833-23e443e2fb96.png",
-      title: "Card 2",
-      description: "Description for Card 2",
+      title: "Jenny V2",
+      description: "long purple hair in an off shoulder leather dress tattered jeans",
     },
     {
       imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1103304949405864036/Soggywaffles_jenny_of_blackpink_all_in_a_Bboy_stance_background_dc42dda6-f395-4be2-b0df-ab52fa85e7dc.png",
-      title: "Card 3",
-      description: "Description for Card 3",
+      title: "Jenny V3",
+      description: "Time square background",
     },
   ],
 };

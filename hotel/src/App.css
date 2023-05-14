@@ -154,15 +154,22 @@
 
 
 .carousel-button {
-  border: none;
   background-color:rgba(207, 246, 247, 0.5);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 100%;
+  border-radius: 50%;
   cursor: pointer;
   height: 50px;
+  width: 50px;
+  border-color: #969090;
+  margin-top: 200px;
+  
+}
 
-  align-self: center;
+.carousel-button:hover {
+  background-color:rgba(56, 215, 236, 0.3);
+  color: #000;
+  border-color: #000;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(32, 228, 146, 0.8);
 }
 
 
@@ -196,4 +203,7 @@
 .kaliwa{
   transform: translateX(300%);
   z-index: 1;
+}
+.deskript{
+  width: 100px;
 }
