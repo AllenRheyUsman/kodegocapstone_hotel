@@ -12,9 +12,9 @@ export default function Dropdown({ option1Url, option2Url, option3Url, navname, 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     const urlMap = {
-      option1: option1Url,
-      option2: option2Url,
-      option3: option3Url,
+      option1: pageUrl,
+      option2: pageUrl,
+      option3: pageUrl,
     };
     window.location.href = urlMap[option];
     setIsMenuOpen(false);
@@ -43,6 +43,7 @@ export default function Dropdown({ option1Url, option2Url, option3Url, navname, 
   } else {
     pageUrl = option3Url;
   }
+  
 
   return (
     <div ref={dropdownRef}>
