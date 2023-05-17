@@ -28,7 +28,7 @@ function App() {
       <br/>
       <br/>
       <MainCar/>
-     
+     <Car2/>
     </div>
     
   );
