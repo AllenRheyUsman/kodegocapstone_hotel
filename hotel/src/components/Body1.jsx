@@ -3,9 +3,9 @@ import React from 'react'
 
 export default function Body1({imageUrl,title2,description2,ratings,style1,price}) {
   return (
-    <div className="card mb-3" style={style1}>
-    <div className="row g-0">
-      <div className="col-md-4">
+    <div className="card mb-3 maincard2" style={style1}>
+    <div className="row ">
+      <div className="col-md-4 ">
       <img src={imageUrl} alt="this is a mountain" />
       </div>
       <div className="col-md-8 text-start px-3">

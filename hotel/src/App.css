@@ -207,3 +207,28 @@
 .deskript{
   width: 100px;
 }
+
+
+/* second carousel */
+.maincard2 {
+  overflow: visible;
+  position: relative;
+  perspective: 1000px;
+}
+
+.maincard2 img{
+ 
+ 
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(39, 41, 40, 0.5);
+}
+
+.maincard2 img:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 5px 10px rgba(157, 243, 200, 0.4);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  transform: scale(1.05);
+
+
+}
