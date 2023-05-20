@@ -232,3 +232,54 @@
 
 
 }
+
+/* for search component */
+
+
+
+
+
+.input-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 0;
+  overflow: hidden;
+  transition: width 1s ease-in-out;
+
+}
+
+.input-form.show-input {
+  width: 80%;
+  /* transform: translateX(10%); */
+}
+
+.input-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+ 
+}
+#button-addon2{
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+  
+}
+
+#marimar{
+  transform: translateX(-200%);
+
+}
+.kalendar{
+  height: 20px;
+  border: none;
+
+ 
+}
+.kalendars{
+  height: 50px;
+  border: none;
+cursor: pointer;
+ 
+}

@@ -9,7 +9,7 @@ import MainCar from'./components/MainCar';
 import Body1 from './components/Body1';
 import Body2 from './components/Body2';
 import Car2 from './components/Car2';
-import Dropdown from './components/Dropdown';
+import Search from './components/search';
 
 
 
@@ -23,8 +23,10 @@ function App() {
     <div className="App">
   
       <Header/>
+
       <br/>
       <br/>
+      <Search/>
       <br/>
       <br/>
       <br/>
