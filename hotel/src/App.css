@@ -1,12 +1,19 @@
 * {
-  font-size: 20px;
+  font-size: 22px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
+}
+.ulo{
+  height: 100px;
+padding-top: 25px;
+  
+
 }
 
 
 .navbtn{
   height: 30px;
+
 
 }
 .dropdown-menu {
@@ -23,7 +30,7 @@
   color: #333;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
- 
+
   
   list-style: none;
   border: solid;
@@ -53,7 +60,7 @@
 .navtext:hover {
   color:#35e2a6;
   text-shadow: 2px 4px .8px rgba(117, 114, 114, 0.2);
-  font-size: 18px;
+  font-size: 32px;
   font-weight: 50px;
   transform: translateY(-200px);
   transition: all 0.3s ease-in-out;
@@ -62,17 +69,32 @@
 .link-primary {
   color: #425568 !important;
   text-decoration: none;
+  font-size: 30px;
 }
 .link-primary:hover {
   color:#35e2a6 !important;
   text-shadow: 2px 4px .8px rgba(117, 114, 114, 0.2);
-  font-size: 18px;
+  font-size: 32px;
   font-weight: 50px;
-  transform: translateY(-200px);
+  transform: translateY(-10%) scale(1.5);
   transition: all 0.3s ease-in-out;
   position: relative;
 }
+.navtext{
+  color: #425568 !important;
+  text-decoration: none;
+  font-size: 30px;
+}
 
+.navtext:hover {
+  color:#35e2a6 !important;
+  text-shadow: 2px 4px .8px rgba(117, 114, 114, 0.2);
+  font-size: 32px;
+  font-weight: 50px;
+  transform: translateY(-10%) scale(1.5);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
 
 /* main card styles */
 
@@ -248,6 +270,11 @@ margin-top: 180px;
 .descriptionscard2{
   margin-left: 5px;
 }
+.text-body-secondary {
+  position: absolute;
+  transform: translateY(-500%) translateX(100%);
+
+}
 
 .ariba{
   width:100%;
@@ -341,4 +368,7 @@ cursor: pointer;
 
 }
 
-
+/* left sidebar */
+.sidebar{
+  transform: translateX(10%);
+}

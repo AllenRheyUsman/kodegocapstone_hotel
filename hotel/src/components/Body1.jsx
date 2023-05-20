@@ -10,9 +10,11 @@ export default function Body1({imageUrl,title2,description2,ratings,style1,price
       </div>
       <div className="col-md-4 text-start descriptionscard2">
         <div className="card-body">
-          <h5 className="card-title">{title2}</h5>
+          <div class="d-flex"> 
+          <h5 className="card-title">{title2}</h5></div>
+         
           <p className="card-text">{description2}</p>
-          <p className="card-text"><small className="text-body-secondary">{ratings}</small></p>
+          <small className="text-body-secondary">{ratings}</small>
           <p>{price}</p>
         </div>
       </div>

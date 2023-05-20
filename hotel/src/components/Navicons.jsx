@@ -4,7 +4,7 @@ export default function Navicons({link1, linkname}) {
   return (
     <div>
       <p>
-        <a href={link1} className="navtext link-primary">
+        <a href={link1} className="navtext">
           {linkname}
         </a>
       </p>

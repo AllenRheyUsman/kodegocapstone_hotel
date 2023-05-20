@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 export default function Card({ imageUrl, title, description, price, ratings }) {
   return (
     <div className="card naol bg-transparent">

@@ -23,6 +23,7 @@ function Car2({ items }) {
           ))}
 
 <div class="col-8 booknow2">
+  
             <button type="button" class="btn btn-outline-info text-end position-absolute">Book now</button>
         </div>
         </div>

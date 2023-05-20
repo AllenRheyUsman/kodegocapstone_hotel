@@ -7,7 +7,7 @@ class Header extends Component {
   render() {
 
     return (
-      <div className="container-fluid mt-3">
+      <div className="container-fluid mt-3 ulo">
         <div className="row">
           <div className="col-sm text-end">
             <Navicons
@@ -42,7 +42,7 @@ class Header extends Component {
           <div className="col-sm text-start">
             <Navicons />
           </div>
-          <div className="col-sm text-end">
+          <div className="col-sm text-end ">
             <Dropdown 
               option1Url="page8.html"
               option2Url="page9.html" 
