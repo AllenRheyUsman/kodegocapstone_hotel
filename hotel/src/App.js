@@ -1,4 +1,5 @@
 import React from 'react';
+import {Routes, Route} from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
 import './App.css';
@@ -18,6 +19,7 @@ import Dropdown from './components/Dropdown';
 
 function App() {
   return (
+    
     <div className="App">
   
       <Header/>
@@ -28,7 +30,10 @@ function App() {
       <br/>
       <br/>
       <MainCar/>
-     <Car2/>
+
+
+
+     <Body2/>
     </div>
     
   );
