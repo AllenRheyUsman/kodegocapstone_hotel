@@ -39,6 +39,10 @@ export default function MainCar(props) {
           title={props.cards[currentIndex].title}
           description={props.cards[currentIndex].description}
         />
+
+        <button type="button" class="btn btn-outline-info text-end position-absolute">Book now</button>
+
+
       </div>
       <div className="tatlo">
         <Card 

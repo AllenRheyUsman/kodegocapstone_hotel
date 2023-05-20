@@ -21,7 +21,13 @@ function Car2({ items }) {
               <Body1 {...item} />
             </div>
           ))}
+
+<div class="col-8 booknow2">
+            <button type="button" class="btn btn-outline-info text-end position-absolute">Book now</button>
         </div>
+        </div>
+
+        
         <button className="carousel-control-prev car2prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" onClick={handlePrev}>
           <span className="carousel-control-prev-icon nexticon" aria-hidden="true"></span>
           <span className="visually-hidden">Previous</span>
@@ -30,6 +36,7 @@ function Car2({ items }) {
           <span className="carousel-control-next-icon nexticon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
+      
       </div>
   
   );
