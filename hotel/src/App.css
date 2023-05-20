@@ -78,7 +78,9 @@
 .mama {
   
   justify-content: end;
-  margin-right: 200px;
+  transform: translateX(-25%) translateY(-25%);
+
+  height: 600px;
 
 }
 
@@ -210,15 +212,52 @@
 
 
 /* second carousel */
+.mamacar2 {
+  
+
+  transform: translateY(-50%);
+  height: 200px;
+
+}
+
+.car2prev{
+  transform: translateX(-50%);
+}
+.car2next{
+  transform: translateX(-300%);
+  z-index: 2;
+
+}
+.nexticon{
+  background-color: rgba(163, 163, 167, 0.5);
+  border-radius: 20px;
+}
+.descriptionscard2{
+  margin-left: 5px;
+}
+
+.ariba{
+  width:100%;
+  display: grid;
+}
+.aribainner{
+  
+  border-style: none !important;
+}
+.leftside{
+  /* transform: translateX(50%); */
+}
+
 .maincard2 {
   overflow: visible;
   position: relative;
-  perspective: 1000px;
+
 }
 
 .maincard2 img{
  
- 
+  height: 250px;
+  width: 250px;
   border-radius: 30px;
   box-shadow: 5px 5px 10px rgba(39, 41, 40, 0.5);
 }
@@ -283,3 +322,12 @@
 cursor: pointer;
  
 }
+.mamasearch {
+  
+
+
+  height: 200px;
+
+}
+
+

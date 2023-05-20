@@ -18,7 +18,7 @@ export default function Search() {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid mamasearch">
       <div className="row justify-content-center">
         <div className="col-4"></div>
         <div className="col-4 text-end">
