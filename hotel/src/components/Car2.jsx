@@ -26,6 +26,7 @@ function Car2() {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
+test
     </div>
   )
 }
