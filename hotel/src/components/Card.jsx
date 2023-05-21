@@ -6,7 +6,7 @@ export default function Card({ imageUrl, title, description, price, ratings }) {
     <div className="card naol bg-transparent">
       <img className="card-img-top" src={imageUrl} alt={title} />
      
-      <div className=" row card-body mt-5 deskript">
+      <div className=" row card-body mt-2 deskript">
        <div class="col">
         <div class="row">
           <div class="col-6">

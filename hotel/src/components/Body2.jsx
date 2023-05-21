@@ -25,44 +25,38 @@ export default function Body2() {
         <div className="col-9 text-end">
           <div className="row">Recommended</div>
           <div className="row">
-            <div className="col-4">
+            <div className="col-6">
               <Car2 />
         
             </div>
-            <div className="col-4">
+            <div className="col-6">
               <Car2 />
             </div>
-            <div className="col-4">
-              <Car2 />
-            </div>
+           
           </div>
 
-          <div className="row">Guest's Choice</div>
+          <div className="row mt-5">Guest's Choice</div>
           <div className="row">
-            <div className="col-4">
+            <div className="col-6">
               <Car2 />
         
             </div>
-            <div className="col-4">
+            <div className="col-6">
               <Car2 />
             </div>
-            <div className="col-4">
-              <Car2 />
-            </div>
+           
           </div>
 
-          <div className="row">Budget Friendly</div>
+          <div className="row mt-5">Budget Friendly</div>
           <div className="row">
-            <div className="col-4">
+            <div className="col-6">
               <Car2 />
         
             </div>
-            <div className="col-4">
+            <div className="col-6">
               <Car2 />
             </div>
-            <div className="col-4">
-              <Car2 />
-            </div>
+           
           </div>
        
           

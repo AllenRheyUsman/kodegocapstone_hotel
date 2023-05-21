@@ -24,7 +24,7 @@ function Car2({ items }) {
 
 <div class="col-8 booknow2">
   
-            <button type="button" class="btn btn-outline-info text-end position-absolute">Book now</button>
+            <button type="button" id="booknow2ndcar" class="btn  btn-outline-info text-end position-absolute">Book now</button>
         </div>
         </div>
 

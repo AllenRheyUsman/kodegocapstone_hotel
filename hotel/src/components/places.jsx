@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "./Card";
 
-export default function MainCar(props) {
+export default function PlacesCar(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
                   // event handlers
@@ -17,28 +17,29 @@ export default function MainCar(props) {
 
   return (
     <div className="d-flex mama">
+         <button className="carousel-button prev-button imahe-kaliwa" onClick={handlePrevious}>
+         <img src={process.env.PUBLIC_URL + '/images/vector.png'} alt="" />
 
-
-         
-
-  
-         <button className="carousel-button prev-button kaliwa bg-transparent" onClick={handlePrevious}>
-         <span className="carousel-control-prev-icon nexticon" aria-hidden="true"></span>
-         <span className="visually-hidden">Previous</span>
       </button>
-        <div className="dalawa ">
+        <div className="imahe">
         <Card
           imageUrl={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].imageUrl}
-          // title={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].title}
-          // description={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].description}
+          title={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].title}
+          description={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].description}
+          ratings={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].ratings}
+
         />
       </div>
-      <div className="una">
+      <div className="imahe">
         <Card
           imageUrl={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].imageUrl}
+          title={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].title}
+          description={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].description}
+          ratings={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].ratings}
+
         />
       </div>
-      <div className={`maincard card2${currentIndex === 0 ? 'main' : ''}`}>
+      <div className={`imahe card2${currentIndex === 0 ? 'main' : ''}`}>
         <Card className="maincard"
           imageUrl={props.cards[currentIndex].imageUrl}
           title={props.cards[currentIndex].title}
@@ -46,37 +47,38 @@ export default function MainCar(props) {
           ratings={props.cards[currentIndex].ratings}
         />
         
-        <button type="button" id="booknowmain" class="btn btn-outline-info text-end position-absolute">Book now</button>
+       
 
 
       </div>
-      <div className="tatlo">
+      <div className="imahe">
         <Card 
           imageUrl={props.cards[(currentIndex + 1) % props.cards.length].imageUrl}
-          // title={props.cards[(currentIndex + 1) % props.cards.length].title}
-          // description={props.cards[(currentIndex + 1) % props.cards.length].description}
+          title={props.cards[(currentIndex + 1) % props.cards.length].title}
+          description={props.cards[(currentIndex + 1) % props.cards.length].description}
+          ratings={props.cards[(currentIndex + props.cards.length + 1) % props.cards.length].ratings}
+
         />
       </div>
-      <div className="apat">
+      <div className="imahe">
         <Card
           imageUrl={props.cards[(currentIndex + 2) % props.cards.length].imageUrl}
-          // title={props.cards[(currentIndex + 2) % props.cards.length].title}
-          // description={props.cards[(currentIndex + 2) % props.cards.length].description}
+          title={props.cards[(currentIndex + 2) % props.cards.length].title}
+          description={props.cards[(currentIndex + 2) % props.cards.length].description}
+          ratings={props.cards[(currentIndex + props.cards.length + 1) % props.cards.length].ratings}
+
         />
       </div>
    
-      <button className="carousel-button next-button kanan bg-transparent" onClick={handleNext}>
-      <span className="carousel-control-next-icon nexticon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-         
-      
+      <button className="carousel-button next-button imahe-kanan" onClick={handleNext}>
+      <img src={process.env.PUBLIC_URL + '/images/Vector 3.png'} alt="" />
 
       </button>
     </div>
   );
 }
 
-MainCar.defaultProps = {
+PlacesCar.defaultProps = {
   cards: [
     {
       imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1106465042519572571/Soggywaffles_jisoo_of_blackpink_in_a_Bboy_stance_background_for_bc959426-e6fe-40d8-9a8a-31e7f73338a7.png",

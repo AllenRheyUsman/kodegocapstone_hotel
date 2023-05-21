@@ -1,10 +1,10 @@
 * {
-  font-size: 22px;
+
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }
 .ulo{
-  height: 100px;
+  height: 80px;
 padding-top: 25px;
   
 
@@ -60,7 +60,7 @@ padding-top: 25px;
 .navtext:hover {
   color:#35e2a6;
   text-shadow: 2px 4px .8px rgba(117, 114, 114, 0.2);
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 50px;
   transform: translateY(-200px);
   transition: all 0.3s ease-in-out;
@@ -69,12 +69,12 @@ padding-top: 25px;
 .link-primary {
   color: #425568 !important;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 22px;
 }
 .link-primary:hover {
   color:#35e2a6 !important;
   text-shadow: 2px 4px .8px rgba(117, 114, 114, 0.2);
-  font-size: 32px;
+  font-size:24px;
   font-weight: 50px;
   transform: translateY(-10%) scale(1.5);
   transition: all 0.3s ease-in-out;
@@ -83,13 +83,13 @@ padding-top: 25px;
 .navtext{
   color: #425568 !important;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .navtext:hover {
   color:#35e2a6 !important;
   text-shadow: 2px 4px .8px rgba(117, 114, 114, 0.2);
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 50px;
   transform: translateY(-10%) scale(1.5);
   transition: all 0.3s ease-in-out;
@@ -99,57 +99,62 @@ padding-top: 25px;
 /* main card styles */
 
 .card img{
-  width: 300px;
+  width: 150px;
 }
 
 .mama {
   
   justify-content: end;
-  transform: translateX(-25%) translateY(-25%);
+transform: translateY(-10%) translateX(-10%);
 
-  height: 730px;
+  height: 650px;
 
 }
 .deskript{
   min-width: 80%;
  height: 200px;
+ margin-top: -100px;
   
+}
+#booknowmain{
+  margin-top: -100px;
+  margin-left: 200px;
 }
 
 .una img{
-  margin-top: 60px;
+  margin-top: 35px;
   padding-right: -0px;
-  width: 400px;
-  height: 420px;
+  width: 200px;
+  height: 220px;
   border-radius: 30px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   
 }
 .dalawa img{
-  margin-top: 150px;
+  margin-top: 120px;
   padding-right: -0px;
   border-radius: 30px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 
 }
 .tatlo img{
-  margin-top: 60px;
+  margin-top: 35px;
   border-radius: 30px;
-  width: 400px;
-  height: 420px;
+  width: 200px;
+  height: 220px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 
 }
 .apat img{
-  margin-top: 150px;
+  margin-top: 120px;
   border-radius: 30px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 
 }
 .maincard img{
  
-  height: 450px;
-  width: 470px;
+  height: 250px;
+  width: 270px;
   border-radius: 30px;
   box-shadow: 15px 25px 15px rgba(39, 41, 40, 0.5);
 }
@@ -188,23 +193,16 @@ padding-top: 25px;
 
 
 .carousel-button {
-  background-color:rgba(207, 246, 247, 0.5);
-  border-radius: 50%;
+ 
   cursor: pointer;
   height: 50px;
   width: 50px;
-  border-color: #969090;
-  margin-top: 250px;
+ border: none;
+  margin-top: 170px;
   
 }
 
-.carousel-button:hover {
-  background-color:rgba(56, 215, 236, 0.3);
-  color: #000;
-  border-color: #000;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 0px 10px rgba(32, 228, 146, 0.8);
-}
+
 
 
 /* .card-container {
@@ -247,8 +245,9 @@ padding-top: 25px;
 .mamacar2 {
   
 
-  transform: translateY(-50%);
+
   height: 200px;
+  margin-top: -250px;
 
 }
 .booknow2{
@@ -256,12 +255,17 @@ margin-top: 180px;
 }
 
 .car2prev{
-  transform: translateX(-50%);
+  transform: translateX(20%);
 }
 .car2next{
-  transform: translateX(-370%);
+  transform: translateX(-300%);
   z-index: 2;
 
+}
+#booknow2ndcar{
+  transform: scale(.8);
+  margin-top: -70px;
+  margin-left: 45px;
 }
 .nexticon{
   background-color: rgba(163, 163, 167, 0.5);
@@ -294,15 +298,15 @@ margin-top: 180px;
 
 .maincard2 img{
  
-  height: 250px;
-  width: 250px;
+  height: 180px;
+  width: 190px;
   border-radius: 30px;
   box-shadow: 5px 5px 10px rgba(39, 41, 40, 0.5);
 }
 
 .maincard2 img:hover {
   transform: translateY(-10px);
-  box-shadow: 5px 5px 10px rgba(157, 243, 200, 0.4);
+  box-shadow: 15px 5px 15px rgba(157, 243, 200, 0.5);
   transition: all 0.3s ease-in-out;
   position: relative;
   transform: scale(1.05);
@@ -333,14 +337,14 @@ margin-top: 180px;
 
 .input-form input {
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 10px 0 0 10px;
  
 }
 #button-addon2{
   border-radius: 0 10px 10px 0;
-  padding: 10px;
+  padding: 5px;
   
 }
 
@@ -349,26 +353,47 @@ margin-top: 180px;
 
 }
 .kalendar{
-  height: 20px;
+  height: 10px;
   border: none;
 
  
 }
 .kalendars{
-  height: 50px;
+  height: 40px;
   border: none;
 cursor: pointer;
  
 }
 .mamasearch {
   
+  margin-top: 0;
 
-
-  height: 200px;
+  height: 100px;
 
 }
 
 /* left sidebar */
 .sidebar{
   transform: translateX(10%);
+}
+
+
+/* for places to visit carousel */
+
+
+.body3mama {
+  margin-top: 650px;
+  height: 900px !important;
+
+}
+.imahe-kaliwa, .imahe-kanan{
+  margin-top: 50px;
+}
+.imahe{
+  margin-left: 5px;
+ 
+}
+.imahe img{
+  height: 180px;
+  width: 260px;
 }

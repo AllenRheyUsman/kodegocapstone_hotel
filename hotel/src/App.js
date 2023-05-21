@@ -10,6 +10,7 @@ import Body1 from './components/Body1';
 import Body2 from './components/Body2';
 import Car2 from './components/Car2';
 import Search from './components/search';
+import Body3 from './components/Body3';
 
 
 
@@ -36,6 +37,7 @@ function App() {
 
 
      <Body2/>
+   < Body3 />
     </div>
     
   );
