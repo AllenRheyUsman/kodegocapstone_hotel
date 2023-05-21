@@ -5,8 +5,7 @@ import ReactDOM from 'react-dom';
 import './App.css';
 
 import Header from './components/Header';
-import MainCar from'./components/MainCar';
-import Body1 from './components/Body1';
+
 import Body2 from './components/Body2';
 import Body from './components/Body';
 import Search from './components/search';
@@ -22,7 +21,7 @@ function App() {
   return (
     
     <div className="App">
-        <Header/>
+      <Header />
       <Search/>
       <Body/>
      <Body2/>

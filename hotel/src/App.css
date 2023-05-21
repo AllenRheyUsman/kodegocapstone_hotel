@@ -6,6 +6,9 @@
 .ulo {
   height: 80px;
   padding-top: 25px;
+  z-index: 998;
+  position: relative;
+  z-index: 999; 
 }
 
 .navbtn {
