@@ -16,21 +16,27 @@ export default function PlacesCar(props) {
   };
 
   return (
-    <div className="d-flex mama">
-         <button className="carousel-button prev-button imahe-kaliwa" onClick={handlePrevious}>
-         <img src={process.env.PUBLIC_URL + '/images/vector.png'} alt="" />
+    
 
+    <div className="row">
+      
+      <div className=" col imahe">
+
+        <div className="row position-absolute kanangcol">
+        <button className="carousel-button prev-button imahe-kaliwa bg-transparent" onClick={handlePrevious}>
+         <span className="carousel-control-prev-icon nexticon" aria-hidden="true"></span>
+         <span className="visually-hidden">Previous</span>
       </button>
-        <div className="imahe">
-        <Card
+        </div>
+        <div className="row">     <Card
           imageUrl={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].imageUrl}
           title={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].title}
           description={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].description}
           ratings={props.cards[(currentIndex + props.cards.length - 2) % props.cards.length].ratings}
-
-        />
+        /></div>
+   
       </div>
-      <div className="imahe">
+      <div className=" col imahe">
         <Card
           imageUrl={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].imageUrl}
           title={props.cards[(currentIndex + props.cards.length - 1) % props.cards.length].title}
@@ -39,7 +45,7 @@ export default function PlacesCar(props) {
 
         />
       </div>
-      <div className={`imahe card2${currentIndex === 0 ? 'main' : ''}`}>
+      <div className={`imahe col card2${currentIndex === 0 ? 'main' : ''}`}>
         <Card className="maincard"
           imageUrl={props.cards[currentIndex].imageUrl}
           title={props.cards[currentIndex].title}
@@ -51,7 +57,7 @@ export default function PlacesCar(props) {
 
 
       </div>
-      <div className="imahe">
+      <div className="imahe col">
         <Card 
           imageUrl={props.cards[(currentIndex + 1) % props.cards.length].imageUrl}
           title={props.cards[(currentIndex + 1) % props.cards.length].title}
@@ -60,21 +66,32 @@ export default function PlacesCar(props) {
 
         />
       </div>
-      <div className="imahe">
+      <div className="col imahe">
+     
+        
+
+        <div className="row position-absolute kaliwangcol ">
+        <button className="carousel-button next-button imahe-kanan bg-transparent" onClick={handleNext}>
+      <span className="carousel-control-next-icon nexticon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+
+      </button>
+        </div>
+        <div className="row">
         <Card
           imageUrl={props.cards[(currentIndex + 2) % props.cards.length].imageUrl}
           title={props.cards[(currentIndex + 2) % props.cards.length].title}
           description={props.cards[(currentIndex + 2) % props.cards.length].description}
           ratings={props.cards[(currentIndex + props.cards.length + 1) % props.cards.length].ratings}
 
-        />
+        /></div>
+       
+       
       </div>
    
-      <button className="carousel-button next-button imahe-kanan" onClick={handleNext}>
-      <img src={process.env.PUBLIC_URL + '/images/Vector 3.png'} alt="" />
-
-      </button>
+   
     </div>
+
   );
 }
 

@@ -1,21 +1,17 @@
 * {
-
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }
-.ulo{
+
+.ulo {
   height: 80px;
-padding-top: 25px;
-  
-
+  padding-top: 25px;
 }
 
-
-.navbtn{
+.navbtn {
   height: 30px;
-
-
 }
+
 .dropdown-menu {
   box-sizing: border-box;
   background-color: #fff;
@@ -24,18 +20,14 @@ padding-top: 25px;
   margin-top: 0.5rem;
 }
 
-.baba{
- 
+.baba {
   background-color: #d3d5d4;
   color: #333;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-
-  
   list-style: none;
   border: solid;
   border-color: #d3d5d4;
-  
 }
 
 .baba:hover {
@@ -44,260 +36,184 @@ padding-top: 25px;
   transition: background-color 0.3s ease-in-out;
   border-radius: 5px;
 }
+
 .babapapa {
-  /* background-color: #009688;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px; */
   transition: all 0.3s ease;
 }
 
-.navtext:hover {
-  color:#35e2a6;
-  text-shadow: 2px 4px .8px rgba(117, 114, 114, 0.2);
+.navtext:hover,
+.link-primary:hover {
+  color: #35e2a6 !important;
+  text-shadow: 2px 4px 0.8px rgba(117, 114, 114, 0.2);
   font-size: 24px;
   font-weight: 50px;
-  transform: translateY(-200px);
+  transform: translateY(-10%) scale(1.5);
   transition: all 0.3s ease-in-out;
- 
+  position: relative;
 }
+
+.navtext,
 .link-primary {
   color: #425568 !important;
   text-decoration: none;
   font-size: 22px;
 }
-.link-primary:hover {
-  color:#35e2a6 !important;
-  text-shadow: 2px 4px .8px rgba(117, 114, 114, 0.2);
-  font-size:24px;
-  font-weight: 50px;
-  transform: translateY(-10%) scale(1.5);
-  transition: all 0.3s ease-in-out;
-  position: relative;
-}
-.navtext{
-  color: #425568 !important;
-  text-decoration: none;
-  font-size: 22px;
-}
-
-.navtext:hover {
-  color:#35e2a6 !important;
-  text-shadow: 2px 4px .8px rgba(117, 114, 114, 0.2);
-  font-size: 24px;
-  font-weight: 50px;
-  transform: translateY(-10%) scale(1.5);
-  transition: all 0.3s ease-in-out;
-  position: relative;
-}
 
 /* main card styles */
-
-.card img{
+.card img {
   width: 150px;
 }
 
 .mama {
-  
-  justify-content: end;
-transform: translateY(-10%) translateX(-10%);
+  height:900px;
+  transform: translateY(-30%) translateX(18%);
 
-  height: 650px;
+ 
 
 }
-.deskript{
+
+.deskript {
   min-width: 80%;
- height: 200px;
- margin-top: -100px;
-  
-}
-#booknowmain{
+  height: 200px;
   margin-top: -100px;
+  width: 100px;
+}
+
+#booknowmain {
+  margin-top: -50px;
   margin-left: 200px;
 }
 
-.una img{
-  margin-top: 35px;
-  padding-right: -0px;
-  width: 200px;
-  height: 220px;
-  border-radius: 30px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-  
-}
-.dalawa img{
-  margin-top: 120px;
-  padding-right: -0px;
-  border-radius: 30px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+.maincard img {
 
-}
-.tatlo img{
-  margin-top: 35px;
+  height: 280px;
+  width: 300px;
   border-radius: 30px;
-  width: 200px;
-  height: 220px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-
+  box-shadow: 15px 25px 15px rgba(39, 41, 40, 0.5);
 }
-.apat img{
-  margin-top: 120px;
-  border-radius: 30px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+.secondcards img{
 
-}
-.maincard img{
- 
-  height: 250px;
-  width: 270px;
+  height: 200px;
+  width: 240px;
   border-radius: 30px;
   box-shadow: 15px 25px 15px rgba(39, 41, 40, 0.5);
 }
 
+.thirdcards img{
+
+  height: 180px;
+  width: 200px;
+  border-radius: 30px;
+  box-shadow: 15px 25px 15px rgba(39, 41, 40, 0.5);
+
+}
 .maincard img:hover {
   transform: translateY(-20px);
   box-shadow: 15px 25px 15px rgba(157, 243, 200, 0.4);
   transition: all 0.3s ease-in-out;
   position: relative;
 }
-
-
-
-
-.una{
-  transform: translateX(30%)
+.left2{
+  transform: translateX(50%) translateY(10%);
 }
-.dalawa{
-  transform: translateX(80%)
+.left1 img{
+  transform: translateX(20%) translateY(260%);
 }
-.apat{
-  transform: translateX(-80%);
-}
-.tatlo{
-  transform: translateX(-30%);
+
+.right2 {
+  transform: translateX(-30%) translateY(10%);
   z-index: 1;
-
-  
 }
-.maincard{
+.right1 img{
+  transform: translateX(-140%) translateY(42%);
+}
+
+.maincard {
   z-index: 2;
 }
 
-
-
-
-
 .carousel-button {
- 
   cursor: pointer;
   height: 50px;
   width: 50px;
- border: none;
-  margin-top: 170px;
-  
-}
-
-
-
-
-/* .card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  transition: transform 0.5s ease-out;
-}
-
-.card-container.previous {
-  transform: translateX(-100%);
-}
-
-.card-container.next {
-  transform: translateX(100%);
-} */
-.naol{
-  border: none !important;
+  border: none;
  
 }
 
-.una, .dalawa, .tatlo, .apat {
+.naol {
+  border: none !important;
+}
+
+.darkblur {
   filter: brightness(70%) blur(1.5px);
-  
 }
-.kanan{
-  transform: translateX(-300%);
-}
-.kaliwa{
-  transform: translateX(300%);
+
+.kanan {
+  transform: translateY(320%) translateX(-160%);
   z-index: 1;
 }
-.deskript{
-  width: 100px;
+
+.kaliwa {
+
+  transform: translateY(1100%) translateX(75%);
+  z-index: 1;
 }
 
 
 /* second carousel */
 .mamacar2 {
-  
-
-
   height: 200px;
   margin-top: -250px;
-
-}
-.booknow2{
-margin-top: 180px;
 }
 
-.car2prev{
+.booknow2 {
+  margin-top: 180px;
+}
+
+.car2prev {
   transform: translateX(20%);
 }
-.car2next{
+
+.car2next {
   transform: translateX(-300%);
   z-index: 2;
-
 }
-#booknow2ndcar{
-  transform: scale(.8);
+
+#booknow2ndcar {
+  transform: scale(0.8);
   margin-top: -70px;
   margin-left: 45px;
 }
-.nexticon{
+
+.nexticon {
   background-color: rgba(163, 163, 167, 0.5);
   border-radius: 20px;
 }
-.descriptionscard2{
+
+.descriptionscard2 {
   margin-left: 5px;
 }
+
 .text-body-secondary {
   position: absolute;
   transform: translateY(-500%) translateX(100%);
-
 }
 
-.ariba{
-  width:100%;
+.ariba {
+  width: 100%;
   display: grid;
 }
-.aribainner{
-  
+
+.aribainner {
   border-style: none !important;
 }
-
 
 .maincard2 {
   overflow: visible;
   position: relative;
-
 }
 
-.maincard2 img{
- 
+.maincard2 img {
   height: 180px;
   width: 190px;
   border-radius: 30px;
@@ -310,15 +226,21 @@ margin-top: 180px;
   transition: all 0.3s ease-in-out;
   position: relative;
   transform: scale(1.05);
-
-
 }
 
 /* for search component */
+.navbtn {
+  height: 30px;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
 
-
-
-
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
 .input-form {
   display: flex;
@@ -326,13 +248,12 @@ margin-top: 180px;
   justify-content: flex-end;
   width: 0;
   overflow: hidden;
-  transition: width 1s ease-in-out;
-
+  transition: width 3s ease-in-out;
 }
 
-.input-form.show-input {
-  width: 80%;
-  /* transform: translateX(10%); */
+.show-input {
+  width: auto;
+  margin-left: 10px; /* Adjust as needed */
 }
 
 .input-form input {
@@ -340,60 +261,94 @@ margin-top: 180px;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 10px 0 0 10px;
- 
 }
-#button-addon2{
+
+#button-addon2 {
   border-radius: 0 10px 10px 0;
   padding: 5px;
-  
+}
+.search-container {
+  position: relative;
+  z-index: 999; 
 }
 
-#marimar{
+
+
+
+
+
+/* .input-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 0;
+  overflow: hidden;
+  transition: width 1s ease-in-out;
+}
+
+.input-form.show-input {
+  width: 80%;
+}
+
+.input-form input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+}
+
+#button-addon2 {
+  border-radius: 0 10px 10px 0;
+  padding: 5px;
+}
+
+#marimar {
   transform: translateX(-200%);
-
 }
-.kalendar{
+
+.kalendar {
   height: 10px;
   border: none;
-
- 
 }
-.kalendars{
+
+.kalendars {
   height: 40px;
   border: none;
-cursor: pointer;
- 
+  cursor: pointer;
 }
+
 .mamasearch {
-  
   margin-top: 0;
-
   height: 100px;
-
-}
+} */
 
 /* left sidebar */
-.sidebar{
+.sidebar {
   transform: translateX(10%);
 }
 
-
 /* for places to visit carousel */
-
-
 .body3mama {
   margin-top: 650px;
   height: 900px !important;
+}
 
-}
-.imahe-kaliwa, .imahe-kanan{
-  margin-top: 50px;
-}
-.imahe{
+.imahe {
   margin-left: 5px;
- 
 }
-.imahe img{
-  height: 180px;
-  width: 260px;
+
+.imahe img {
+  height: 150px;
+  width: 230px;
+}
+
+.kanangcol,
+.kaliwangcol {
+  width: 50px;
+  z-index: 1;
+  transform: translateY(100%);
+}
+
+.kaliwangcol {
+  transform: translateY(100%) translateX(400%);
 }
