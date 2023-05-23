@@ -86,25 +86,24 @@
 //     </div>
 //   );
 // }
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import Search1 from './searchcomponent'
 
 export default function Search() {
   
 
   return (
-    <div className="container-fluid">
-      <div className='row justify-content-center'>
-        <div>
+    <div className="col justify-center">
+ 
+   <Search1/>
+ 
 
-          
-        </div>
-        <div className='col-4 text-center'>
 
-         <Search1/>
-        </div>
-      </div>
+
+
+      
    
     </div>
+    
   );
 }

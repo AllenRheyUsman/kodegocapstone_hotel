@@ -13,7 +13,7 @@ export default function MainCar(props) {
   };
 
   return (
-    <div className="row mama">
+    <div className="d-flex mama">
       <div className="col ">
         <div className="row position-absolute ">
           <button className="carousel-button prev-button kaliwa bg-transparent" onClick={handlePrevious}>
@@ -66,36 +66,65 @@ export default function MainCar(props) {
 MainCar.defaultProps = {
   cards: [
     {
-      imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1106465042519572571/Soggywaffles_jisoo_of_blackpink_in_a_Bboy_stance_background_for_bc959426-e6fe-40d8-9a8a-31e7f73338a7.png",
-      title: "Jisoo",
-      description: "Pink Hair Black Leather Jacket white undershirt",
-      ratings: "⭐⭐⭐⭐",
+        imageUrl: "https://a0.muscache.com/im/pictures/miso/Hosting-736194760184993424/original/aa7f0291-6369-491d-ba4c-eb561f163a9f.jpeg?im_w=1200",
+        title: "Deluxe Kings Room Solo",
+        description: "Experience luxury and comfort in our spacious Deluxe King Room. This room is perfect for couples or solo travelers looking for a relaxing stay.",
+        amenities: [
+            "King-size bed",
+            "En-suite bathroom",
+            "Mini refrigerator",
+            "Work desk"
+        ],
+        ratings: "PHP 7,500.00",
     },
     {
-      imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1106465549854187621/Soggywaffles_Rose_of_blackpink_in_a_Bboy_stance_background_fore_f6b251d8-30a7-412e-b9e1-b4b0f2e2a42f.png",
-      title: "Rose",
-      description: "Light pink hair with black undertone black leather jacket",
-      ratings: "⭐⭐⭐",
+        imageUrl: "https://a0.muscache.com/im/pictures/miso/Hosting-736194760184993424/original/d6927e80-c5ce-4140-ac80-139f47f85f1d.jpeg?im_w=1200",
+        title: "Executive Double Room",
+        description: "Indulge in the elegance of our Executive Double Room. This room offers a comfortable and stylish space for two guests.",
+        amenities: [
+            "Two double beds",
+            "Private balcony",
+            "Flat-screen TV",
+            "Coffee maker"
+        ],
+        ratings: "PHP 9,500.00",
     },
     {
+        imageUrl: "https://a0.muscache.com/im/pictures/miso/Hosting-736194760184993424/original/a759c102-5746-4b86-b481-3325ba9c48b7.jpeg?im_w=1200",
+        title: "Standard Single Room",
+        description: "Enjoy a cozy and convenient stay in our Standard Single Room. This room provides all the essentials for a solo traveler.",
+        amenities: [
+            "Single bed",
+            "Shared bathroom",
+            "Closet space",
+            "Complimentary Wi-Fi"
+        ],
+        ratings: "PHP 10,299.00",
+    },
+    {
+        imageUrl: "https://a0.muscache.com/im/pictures/miso/Hosting-736194760184993424/original/45dc1534-3d2b-4241-ba65-308ff0413734.jpeg?im_w=1200",
+        title: "Superior Double Room",
+        description: "Retreat to our Superior Double Room and experience a blend of comfort and sophistication. Perfect for couples or friends traveling together.",
+        amenities: [
+            "Queen-size bed",
+            "Private bathroom",
+            "Air conditioning",
+            "In-room safe"
+        ],
+        ratings: "PHP 12,200.00",
+    },
+    {
+        imageUrl: "https://a0.muscache.com/im/pictures/miso/Hosting-820953992263581569/original/a4f905fa-5b3f-41fd-90c5-af3b76fba3ae.jpeg?im_w=960",
+        title: "Twin Single Room",
+        description: "Share a comfortable stay with a friend or family member in our Twin Single Room. This room offers two separate beds and a welcoming atmosphere.",
+        amenities: [
+            "Two single beds",
+            "En-suite bathroom",
+            "Satellite TV",
+            "Mini bar"
+        ],
+        ratings: "PHP 9,500.00",
+    },
+]
 
-
-      imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1103306736506511390/Soggywaffles_Lisa_of_blackpink_in_a_Bboy_stance_background_fore_31917df4-a88f-488c-b6ab-fbc8ab70af76.png",
-      title: "Lisa",
-      description: "Tattered jeans blonde hair in a hooded leather jacket",
-      ratings: "⭐⭐⭐⭐⭐",
-    },
-    {
-      imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1106465580116099082/Soggywaffles_Rose_of_blackpink_in_a_Bboy_stance_background_fore_77c18c0b-8d7e-4899-a833-23e443e2fb96.png",
-      title: "Jenny V2",
-      description: "Long purple hair in an off-shoulder leather dress tattered jeans",
-      ratings: "⭐⭐⭐",
-    },
-    {
-      imageUrl: "https://cdn.discordapp.com/attachments/1084710350806585405/1103304949405864036/Soggywaffles_jenny_of_blackpink_all_in_a_Bboy_stance_background_dc42dda6-f395-4be2-b0df-ab52fa85e7dc.png",
-      title: "Jenny V3",
-      description: "Times Square background",
-      ratings: "⭐⭐⭐⭐",
-    },
-  ],
 };
